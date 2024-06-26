@@ -67,7 +67,7 @@ export default function Portfolio() {
                     }
                 </div>
                 <hr className="mt-10 pt-10" style={{height: "30px", color:"transparent"}}></hr>
-                <h1 id='title' className='text-center font-bold'>Voici les technologies que j`&apos`ai appris durent mon parcours</h1>
+                <h1 id='title' className='text-center font-bold'>Voici les technologies que j&apos;ai appris durent mon parcours</h1>
 
                 <div id="TechnologyDiv" className='grid grid-cols-2 sm:grid-cols-3 gap-4 items-center justify-items-center h-1/2'>
                     {
