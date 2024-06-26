@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath:"/MathieuGiardPortfolio",
+    basePath:"/mathieu-giard-portfolio",
     output: "export",
     reactStrictMode: true
 };
