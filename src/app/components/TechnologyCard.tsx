@@ -1,11 +1,12 @@
 import Technology from "../portfolio/Technology";
 import './TechnologyCard.css'
+import Image from "next/image";
 
 export default function TechnologyCard(props: {technology: Technology}) {
     return (
         <div className="card">
             <figure className="px-10 pt-10">
-                <img src={props.technology.technologyImg} className="card-img" alt={props.technology.technologyName}/>
+                <Image src={props.technology.technologyImg} className="card-img" alt={props.technology.technologyName} width={450} height={600}/>
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{props.technology.technologyName}</h2>

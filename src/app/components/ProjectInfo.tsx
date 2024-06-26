@@ -2,6 +2,7 @@
 
 import Project from "../portfolio/project";
 import './ProjectInfo.css'
+import Image from "next/image";
 
 export default function ProjectInfo(props: {project: Project}) {
 
@@ -16,7 +17,7 @@ export default function ProjectInfo(props: {project: Project}) {
                 }
                 
             </h1>
-            <img  className="project_img" src={props.project.projectImgURL} alt={props.project.projectName}/>
+            <Image className="project_img" src={props.project.projectImgURL} alt={props.project.projectName} width={250} height={200}/>
             <span className="project_type">{props.project.projectType}</span>
         </div>
     )
