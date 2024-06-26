@@ -14,7 +14,7 @@ export const project3 = new Project(3, "Outil de conception de programmes d'étu
     [technology17, technology11, technology3, technology1, technology4]
 );
 
-export const project4 = new Project(4, "Text Invaders", "Projet de certification", "Un jeu conçu avec C++ et la librairie Curses, qui permet de dessiner dans le terminal tout en pouvant le bouger avec un bouton, qui prend inspiration du fameux jeu rétro Space Invaders", "/images/projects/TextInvadersLogo.png",
+export const project4 = new Project(4, "Text Invaders", "Projet de certification", "Un jeu conçu avec C++ et la librairie Curses, qui permet de dessiner dans le terminal tout en pouvant le bouger avec un bouton, qui prend inspiration du fameux jeu rétro Space Invaders.", "/images/projects/TextInvadersLogo.png",
     [technology10]
 );
 

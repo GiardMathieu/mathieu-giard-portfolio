@@ -28,16 +28,16 @@ export default function Portfolio() {
                 <div id='project_information_overlay'>
                     <div id='project_information' className='hero bg-secondary'>
                         <div className='hero-content'>
-                            <img src={currentProject.projectImgURL} className='project_image'/>
+                            <img src={currentProject.projectImgURL} className='project_image' alt={currentProject.projectName}/>
                             <div className='max-w-md'>
                                 <h1 className='text-2xl pb-2 font-bold'>{currentProject.projectName}</h1>
                                 <p className='py-6'>{currentProject.projectDescription}</p>
                                 <div className='row'>
                                     {
                                         currentProject.technologiesUsed.map(technology => (
-                                            <div className='image_column'>
+                                            <div className='image_column' key={technology.technologyId}>
                                                 <figure className='tooltip tooltip-bottom tooltip-info' data-tip={technology.technologyName}>
-                                                    <img src={technology.technologyImg} className='image_project_modal' />
+                                                    <img src={technology.technologyImg} className='image_project_modal' alt={technology.technologyName}/>
                                                 </figure>
                                             </div>
                                             
@@ -60,14 +60,14 @@ export default function Portfolio() {
 
                     {
                         projectArray.map(project => (
-                            <a onClick={() => setCurrentProject(project)}>
+                            <a  key={project.projectId} onClick={() => setCurrentProject(project)}>
                                 <ProjectInfo key={project.projectId} project={project}/>
                             </a>
                         ))
                     }
                 </div>
                 <hr className="mt-10 pt-10" style={{height: "30px", color:"transparent"}}></hr>
-                <h1 id='title' className='text-center font-bold'>Voici les technologies que j'ai appris durent mon parcours</h1>
+                <h1 id='title' className='text-center font-bold'>Voici les technologies que j`&apos`ai appris durent mon parcours</h1>
 
                 <div id="TechnologyDiv" className='grid grid-cols-2 sm:grid-cols-3 gap-4 items-center justify-items-center h-1/2'>
                     {

@@ -16,7 +16,7 @@ export default function ProjectInfo(props: {project: Project}) {
                 }
                 
             </h1>
-            <img  className="project_img" src={props.project.projectImgURL}/>
+            <img  className="project_img" src={props.project.projectImgURL} alt={props.project.projectName}/>
             <span className="project_type">{props.project.projectType}</span>
         </div>
     )
