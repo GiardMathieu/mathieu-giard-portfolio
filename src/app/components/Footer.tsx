@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="footer footer-center p-4 bg-secondary nav">
+        <div className="footer footer-center p-3 bg-info nav mt-4">
             <p>
                 <a href="https://www.linkedin.com/in/mathieu-giard-51b45b264/">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="75" viewBox="0 0 80 80">

@@ -48,22 +48,20 @@ const config: Config = {
   ],
   daisyui: {
     themes: [
+      'light',
       {
-        lavender: {
-          "primary": "#D3c5E5",
-          "secondary":"735DA5",
-          "info":"#b74897",
-          "nav":"#bd38c7"
-        },
-        modern: {
-          "primary": "#1995AD",
-          "secondary":"#A1D6E2",
-          "info":"#F1F1F2"
+        'dark': {
+          ...require("daisyui/src/theming/themes")["dark"],
+          "neutral":"#FFFFFF",
+          "info":"#3a373d" 
         }
       },
-      'default',
-      'retro',
-      'cupcake',
+      {
+        'default': {
+          ...require("daisyui/src/theming/themes")["default"],
+          "primary":"#000000"
+        }
+      }
     ],
   }
 };
