@@ -36,6 +36,11 @@ export const technology17 = new Technology(17, "Vuejs", "Librairie Javascript", 
 
 export const technology18 = new Technology(18, "Python", "Langage de programmation", "https://docs.python.org/3/index.html", "pythonLogo.png")
 
+export const technology19 = new Technology(19, "Flutter", "Langage de programmation", "https://docs.flutter.dev/", "flutter_logo.png")
+
+export const technology20 = new Technology(20, "Supabase", "Base de données", "https://supabase.com/docs", "supabaseIcon.png")
+
+
 export const technologyArray: Array<Technology> = [
     technology1, 
     technology2,
@@ -54,5 +59,7 @@ export const technologyArray: Array<Technology> = [
     technology15,
     technology16,
     technology17,
-    technology18
+    technology18,
+    technology19,
+    technology20,
 ]

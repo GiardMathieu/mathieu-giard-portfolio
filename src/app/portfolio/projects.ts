@@ -1,6 +1,6 @@
 
 import Project from "./project";
-import { technology1, technology2, technology3, technology4, technology5, technology6, technology7, technology8, technology9, technology10, technology11, technology12, technology13,technology14, technology15, technology16, technology17, technology18 } from "./Technologies";
+import { technology1, technology2, technology3, technology4, technology5, technology6, technology7, technology8, technology9, technology10, technology11, technology12, technology13,technology14, technology15, technology16, technology17, technology18, technology20, technology19 } from "./Technologies";
 
 export const project1 = new Project(1, "GriffinPiece", "Projet d'école", "Un site de streaming inspiré des titans commerciales comme Crunchyroll, Netflix Prime Video etc... Les utilisateurs, peuvent se créer un compte, se connecter, laisser un commentaire sur l'épisode et le mettre dans ses favoris. De plus, pour éviter le moment où l'utilisateur oublie ce qu'il avait regardé auparavant, il y a une fonctionnalité d'historique qui montre les épisodes qu'il avait regardé", "GriffinPieceLogo.jpg",
     [technology1, technology3, technology4, technology8, technology14, technology15, technology12  ]
@@ -30,4 +30,8 @@ export const project7 = new Project(7, "Mon Portfolio", "Projet personnel", "Un 
     [technology1, technology3, technology5, technology7]
 );
 
-export const projectArray: Project[] = [project1, project2, project3, project4, project5, project6, project7];
+export const project8 = new Project(8, "Gym bud", "Projet d'événement", "Une application permettant aux utilisateurs d'adopter de meilleurs habitudes de vie tout en les captivant avec des avatars et la chance de gagner des points en fonction de leur entraînement physique effectué", "gymbudlogo.png",
+    [technology19, technology20]
+)
+
+export const projectArray: Project[] = [project1, project2, project3, project4, project5, project6, project7, project8];
